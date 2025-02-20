@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTC Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CTC Calculator</h1>
+            <p>Calculate your Cost to Company (CTC) easily and accurately.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="calculator">
+            <h2>Enter Your Salary Details</h2>
+            <form id="ctcForm">
+                <div class="input-group">
+                    <label for="basicSalary">Basic Salary:</label>
+                    <input type="number" id="basicSalary" placeholder="Enter basic salary" required>
+                </div>
+                <div class="input-group">
+                    <label for="hra">HRA (House Rent Allowance):</label>
+                    <input type="number" id="hra" placeholder="Enter HRA" required>
+                </div>
+                <div class="input-group">
+                    <label for="specialAllowances">Special Allowances:</label>
+                    <input type="number" id="specialAllowances" placeholder="Enter special allowances" required>
+                </div>
+                <div class="input-group">
+                    <label for="otherAllowances">Other Allowances:</label>
+                    <input type="number" id="otherAllowances" placeholder="Enter other allowances" required>
+                </div>
+                <button type="submit">Calculate CTC</button>
+            </form>
+            <div id="result" class="result-box">
+                <h3>Your CTC:</h3>
+                <p id="ctcValue">₹0</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 CTC Calculator. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
